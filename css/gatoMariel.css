@@ -1,0 +1,16 @@
+/*Elaboró: Mariel Yunuen Jaime Hernández/Fundamentos de la Programación/ICONOS*/
+body{
+  font-family: "Myriad-Pro", sans-serif;
+  font-size:1em;
+  background-image:url("http://cdn.wallpapersafari.com/70/64/3MPlch.jpg");
+  background-color:#ffdcdc;
+  color:#444;
+}
+
+#kitty td{
+  border: thin solid black;
+  font-size: 3em;
+  height: 1em;
+  width: 1em;
+  padding: 1em;
+}
