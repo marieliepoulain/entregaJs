@@ -9,7 +9,9 @@ var queOrden;
 var arregloKitty = new Array(9);
 var celda = document.getElementsByClassName("kitty");
 
-
+function hola() {
+    return "¡Hola Humano!";
+}
 
 function wonPlayer(letra)
 {
@@ -21,7 +23,7 @@ function wonPlayer(letra)
     (arregloKitty[1]==letra && arregloKitty[4]==letra && arregloKitty[7]==letra)||
     (arregloKitty[2]==letra && arregloKitty[5]==letra && arregloKitty[8]==letra)||
     (arregloKitty[0]==letra && arregloKitty[4]==letra && arregloKitty[8]==letra)||
-    (arregloKitty[2]==letra && arregloKitty[4]==letra && arregloKitty[6]==letra)    
+    (arregloKitty[2]==letra && arregloKitty[4]==letra && arregloKitty[6]==letra)
   )
   {
     alert("Jugador"+letra+"Gana");
@@ -44,13 +46,13 @@ function kitty(evento)
 
   if(queOrden!=0)
   {
-    celda.innerHTML = "X";
+    celda.innerHTML ="X";
     arregloKitty[ordenAMarcar] = "X";
     wonPlayer("X");
   }
   else if(queOrden == 0)
   {
-    celda.innerHTML = "O";
+    celda.innerHTML ="O";
     arregloKitty[ordenAMarcar] = "O";
     wonPlayer("O");
     //arregloKitty[ordenAMarcar-1] = O;

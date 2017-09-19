@@ -1,0 +1,217 @@
+/*Elaboró: Mariel Yunuen Jaime Hernández/Fundamentos de la Programación/ICONOS*/
+*{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body{
+  /*font-family: "Myriad-Pro", sans-serif;*/
+  font-size:2em;
+  background-image:url("https://mariannetaylor.co.uk/wp-content/uploads/2017/02/Marianne-Taylor-Photography-0162.jpg");
+  color:#3451d3;
+  }
+
+/*Reloj*/
+.wrap{
+  width:90%;
+  max-width: 1000px;
+  margin:auto;
+  display: inline-block;
+}
+
+.widget{
+  width:40%;
+  max-width: 2em;
+  margin:auto;
+  display: inline-block;
+  float:left;
+}
+
+.widget p{
+  display: inline-block;
+  line-height: 1em;
+  float:left;
+}
+
+.fecha{
+  /*text-align: center;*/
+  font-size:1em;
+  margin-bottom: 0.3125rem;
+  /*margin-bottom:5px;*/
+  background: rgba(0,0,0,.8);
+  padding: 20px;
+  width:auto;
+  display: inline-block;
+  float:left;
+}
+
+.reloj{
+  /*text-align:center;*/
+  font-size:1em;
+  margin-bottom: 0.3125rem;
+  margin-bottom:5px;
+  background: rgba(0,0,0,.8);
+  padding: 20px;
+  width:250px;
+  display: inline-block;
+  float:left;
+}
+
+.reloj .caja-segundos{
+  display: inline-block;
+  float:left;
+}
+
+.reloj .segundos{
+  font-size: 1.5rem;
+  float:left;
+  display: inline-block;
+}
+.reloj .ampm{
+  font-size: 1.5rem;
+  float:left;
+  display: inline-block;
+}
+
+.routine{
+font-size: 1.5rem;
+float:left;
+background: rgba(0,0,0,.8);
+width:250px;
+display: inline-block;
+}
+/*Termina Reloj*/
+
+/*Formulario*/
+.headerone{
+  text-align: center;
+  }
+
+/*.pruebame{
+  text-align:center;
+  font-size:1em;
+  }*/
+
+  :root {
+    --width-inputs: 80%;
+    --bg-color-main: rgba(0, 0, 0, .9);
+    --color-main: #8EC5DA;
+    --color-ok: #3141CC;
+    --color-error: #f70084;
+    --font-main: 'Montserrat', sans-serif;
+  }
+
+  html {
+    font-family: var(--font-main);
+    font-size: 16px;
+  }
+
+  textarea { resize: none; }
+
+  .ContactForm > * {
+    padding: .5rem;
+    margin: 1rem auto;
+    display: block;
+    width: var(--width-inputs);
+  }
+
+  .ContactForm legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .ContactForm input:not([type="submit"]),
+  .ContactForm textarea {
+    border: medium solid var(--color-main);
+    background-color: var(--bg-color-main);
+    color: var(--color-main);
+    font-size: 1rem;
+    font-family: var(--font-main);
+  }
+
+  .ContactForm input[type="submit"] {
+    width: calc(var(--width-inputs) / 2);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--color-main);
+    color: #000;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all .3s ease-out;
+  }
+
+  .ContactForm input[type="submit"]:hover {
+    background-color: var(--bg-color-main);
+    color: var(--color-main);
+  }
+
+  .ContactForm [required]:valid {
+    border: thin solid var(--color-ok);
+    outline: thin solid var(--color-ok);
+  }
+
+  .ContactForm [required]:invalid {
+    border: thin solid var(--color-error);
+    outline: thin solid var(--color-error);
+  }
+
+  .ContactForm [required]:focus {
+    border: thin solid var(--color-main);
+    outline: thin solid var(--color-main);
+  }
+
+  .ContactForm-preload {
+    text-align: center;
+    color: var(--color-main);
+    transition: opacity 400ms ease-out,
+                height 400ms ease-out;
+  }
+
+  .ContactForm-message {
+    margin-top: -1rem;
+    padding: .5rem;
+    background-color: var(--bg-color-main);
+    color: var(--color-main);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 400ms ease-out,
+                height 400ms ease-out;
+  }
+
+  .ContactForm-preload.is-active,
+  .ContactForm-message.is-active {
+    height: auto;
+    opacity: 1;
+  }
+
+  .ContactForm-error {
+    padding: 0 .5rem;
+    font-size: .85rem;
+    background-color: var(--color-main);
+    color: #000;
+    transition: padding 800ms ease-out,
+                height 800ms ease-out,
+                opacity 800ms ease-out;
+  }
+
+  .ContactForm-error.is-active {
+    padding: .5rem;
+    height: 1.85rem;
+    opacity: 1;
+  }
+
+
+  .u-hidden {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  /*Termina Formulario*/

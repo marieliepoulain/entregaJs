@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<!--Elaboró: Mariel Yunuen Jaime Hernández/Fundamentos de la Programación/ICONOS-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gossip!</title>
+        <meta name="description" content="Gossip Stuff">
+        <link rel="stylesheet" href="css/formularioMariel.css">
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    </head>
+    <body>
+      <script language="JavaScript" type="text/javascript">
+      alert("¡Hola GossipGurl!.");
+    </script>
+        <h1 class="headerone">THE GOSSIP</h1>
+
+        <!--<h2 class="pruebame">Try me!</h2>-->
+        <form class="ContactForm">
+    <legend>¡Hola, es momento de revelar TUS SECRETOS!</legend>
+    <input type="text" name="nombre" placeholder="Escribe tu nombre" title="tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+    <input type="tel" name="tel" placeholder="Escribe tu número de celular" title="tu celular" pattern=[/^([0-9]+){9}$/] required>
+    <!--Aplique el atributo type validando con lo siguiente /^([0-9]+){9}$/ aceptando en total solo 9 digitos-->
+    <input type="email" name="email" placeholder="Escribe tu correo electrónico" title="tu email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+    <input type="text" name="asunto" title="asunto a tratar" placeholder="Secreto a tratar" required>
+    <textarea name="comentarios" title="tus comentarios" placeholder="¡Cuentanos más!, queremos conocer todos los detalles" cols="50" rows="5" required></textarea>
+    <input type="submit" value="Enviar">
+    <div class="ContactForm-preload  u-hidden">
+      <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+    </div>
+    <div class="ContactForm-message  u-hidden">
+      <p>TU SECRETO ha sido enviada con éxito</p>
+    </div>
+  </form>
+  <!--Reloj-->
+  <div class="wrap">
+    <div class="widget">
+      <div class="fecha">
+        <p id="diaSemana" class="diaSemana"></p>
+        <p id="dia" class="dia"></p><p>de</p>
+        <p id="mes" class="mes"></p><p>del</p>
+        <p id="year" class="year"></p>
+      </div>
+      <div class="reloj">
+        <p id="horas" class="horas"></p>
+        <p>:</p>
+        <p id="minutos" class="minutos"></p>
+        <p>:</p>
+        <div class="caja-segundos">
+          <p id="segundos" class="segundos"></p>
+          <p id="ampm" class="ampm"></p>
+        </div>
+        <div class="routine">
+          <p id="morning" class="morning"></p>
+          <p id="afternoon" class="afternoon"></p>
+          <p id="night" class="night"></p>
+          <p id="sleep" class="sleep"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Acaba Reloj-->
+
+
+    <script src="./js/formularioMariel.js"></script>
+    </body>
+</html>
